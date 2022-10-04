@@ -5,6 +5,25 @@
     <link>https://awetomate.github.io/categories/</link>
     <description>Recent content in Categories on Awetomate</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://awetomate.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Oct 2022 15:40:48 +0200</lastBuildDate><atom:link href="https://awetomate.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cucm</title>
+      <link>https://awetomate.github.io/categories/cucm/</link>
+      <pubDate>Sun, 02 Oct 2022 15:40:48 +0200</pubDate>
+      
+      <guid>https://awetomate.github.io/categories/cucm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://awetomate.github.io/categories/test/</link>
+      <pubDate>Sun, 02 Oct 2022 15:40:48 +0200</pubDate>
+      
+      <guid>https://awetomate.github.io/categories/test/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

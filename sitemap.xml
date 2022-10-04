@@ -4,7 +4,34 @@
   
     
       <url>
+            <loc>https://awetomate.github.io/about/</loc>
+            <lastmod>2022-10-03T20:46:55+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://awetomate.github.io/</loc>
+            <lastmod>2022-10-02T15:40:48+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://awetomate.github.io/categories/</loc>
+            <lastmod>2022-10-02T15:40:48+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://awetomate.github.io/categories/cucm/</loc>
             <lastmod>2022-10-02T15:40:48+02:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -22,7 +49,7 @@
   
     
       <url>
-            <loc>https://awetomate.github.io/posts/test-post/</loc>
+            <loc>https://awetomate.github.io/tags/tag1/</loc>
             <lastmod>2022-10-02T15:40:48+02:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -31,7 +58,8 @@
   
     
       <url>
-            <loc>https://awetomate.github.io/categories/</loc>
+            <loc>https://awetomate.github.io/tags/</loc>
+            <lastmod>2022-10-02T15:40:48+02:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -39,7 +67,17 @@
   
     
       <url>
-            <loc>https://awetomate.github.io/tags/</loc>
+            <loc>https://awetomate.github.io/categories/test/</loc>
+            <lastmod>2022-10-02T15:40:48+02:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://awetomate.github.io/2022/10/test-post/</loc>
+            <lastmod>2022-10-02T15:40:48+02:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>

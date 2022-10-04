@@ -8,12 +8,24 @@
     <language>en</language>
     <lastBuildDate>Sun, 02 Oct 2022 15:40:48 +0200</lastBuildDate><atom:link href="https://awetomate.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About</title>
+      <link>https://awetomate.github.io/about/</link>
+      <pubDate>Mon, 03 Oct 2022 20:46:55 +0200</pubDate>
+      
+      <guid>https://awetomate.github.io/about/</guid>
+      <description>Well, thanks for the interest, truly, but if you are here then we probably are very much alike.
+Soooo, no big surprises here&amp;hellip;
+I&amp;rsquo;m John and I&amp;rsquo;ve worked as both network and voice (UC) engineer my entire career and always for large(r) multinational enterprises.</description>
+    </item>
+    
+    <item>
       <title>Test Post</title>
-      <link>https://awetomate.github.io/posts/test-post/</link>
+      <link>https://awetomate.github.io/2022/10/test-post/</link>
       <pubDate>Sun, 02 Oct 2022 15:40:48 +0200</pubDate>
       
-      <guid>https://awetomate.github.io/posts/test-post/</guid>
-      <description>Test One # Just a test post to verify functionality.</description>
+      <guid>https://awetomate.github.io/2022/10/test-post/</guid>
+      <description>Test One # Just a test post to verify functionality.
+print(&amp;#34;Hello, world!&amp;#34;) for i in range(10): print(i) </description>
     </item>
     
   </channel>
