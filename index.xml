@@ -6,7 +6,16 @@
     <description>Recent content on Awetomate</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Oct 2022 15:40:48 +0200</lastBuildDate><atom:link href="https://awetomate.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Oct 2022 09:45:42 +0200</lastBuildDate><atom:link href="https://awetomate.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working With Cucm Database</title>
+      <link>https://awetomate.github.io/2022/10/working-with-cucm-database/</link>
+      <pubDate>Fri, 07 Oct 2022 09:45:42 +0200</pubDate>
+      
+      <guid>https://awetomate.github.io/2022/10/working-with-cucm-database/</guid>
+      <description>Cisco Unified Communications Manager uses an Informix database for data storage. Accessing this data directly using SQL queries to create custom reports or gather data for analysis has often come in handy.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://awetomate.github.io/about/</link>
@@ -16,16 +25,6 @@
       <description>Well, thanks for the interest, truly, but if you are here, we probably are much alike or have similar interests.
 Soooo, no big surprises here…
 I’m John, and I’ve worked as both network and voice (UC) engineer my entire career and always for large(r) multinational enterprises.</description>
-    </item>
-    
-    <item>
-      <title>Test Post</title>
-      <link>https://awetomate.github.io/2022/10/test-post/</link>
-      <pubDate>Sun, 02 Oct 2022 15:40:48 +0200</pubDate>
-      
-      <guid>https://awetomate.github.io/2022/10/test-post/</guid>
-      <description>Test One # Just a test post to verify functionality.
-print(&amp;#34;Hello, world!&amp;#34;) for i in range(10): print(i) </description>
     </item>
     
   </channel>
