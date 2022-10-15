@@ -6,7 +6,16 @@
     <description>Recent content in sql on Awetomate</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Oct 2022 09:45:42 +0200</lastBuildDate><atom:link href="https://awetomate.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 20:29:05 +0200</lastBuildDate><atom:link href="https://awetomate.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find Deprecated Phones</title>
+      <link>https://awetomate.github.io/2022/10/find-deprecated-phones/</link>
+      <pubDate>Sat, 15 Oct 2022 20:29:05 +0200</pubDate>
+      
+      <guid>https://awetomate.github.io/2022/10/find-deprecated-phones/</guid>
+      <description>As with every CUCM release, some phones will not be supported anymore. For this example, let us look at how to find a list of phones on CUCM 11.X that are deprecated in release 12.</description>
+    </item>
+    
     <item>
       <title>Working With The CUCM Database</title>
       <link>https://awetomate.github.io/2022/10/working-with-the-cucm-database/</link>
