@@ -571,20 +571,25 @@
   >
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#relevant-data-attributes-tables">Relevant data, attributes, tables</a>
+    <li><a href="#deprecated-phone-models">Deprecated Phone Models</a>
       <ul>
-        <li><a href="#tables">Tables</a></li>
-        <li><a href="#attributes">Attributes</a></li>
-        <li><a href="#conditions">Conditions</a></li>
+        <li><a href="#relevant-data-attributes-tables">Relevant data, attributes, tables</a>
+          <ul>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#attributes">Attributes</a></li>
+            <li><a href="#conditions">Conditions</a></li>
+          </ul>
+        </li>
+        <li><a href="#query">Query</a></li>
+        <li><a href="#return">Return</a></li>
       </ul>
     </li>
-    <li><a href="#query">Query</a></li>
-    <li><a href="#return">Return</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#query-1">Query</a></li>
-    <li><a href="#return-1">Return</a></li>
+    <li><a href="#unsupported-phone-models">Unsupported Phone Models</a>
+      <ul>
+        <li><a href="#query-1">Query</a></li>
+        <li><a href="#return-1">Return</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -596,7 +601,7 @@
       <div class="min-w-0 min-h-0 max-w-prose">
         <p>As with every CUCM release, some phones will not be supported anymore. For this example, let us look at how to find a list of phones on CUCM 11.X that are deprecated in release 12.X and newer.</p>
 <p>The deprecated and supported phone lists are included in the <a href="https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/compat/12_x/cucm_b_compatibility-matrix-cucm-imp-125x.html">12.5 compatibility matrix</a>. The following two queries help extract the necessary data for deprecated and unsupported device models and phone counts.</p>
-<h1 id="deprecated-phone-models" class="relative group">Deprecated Phone Models <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#deprecated-phone-models" aria-label="Anchor">#</a></span></h1>
+<h2 id="deprecated-phone-models" class="relative group">Deprecated Phone Models <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#deprecated-phone-models" aria-label="Anchor">#</a></span></h2>
 <p>The following table lists all the phone models that are deprecated for this release of Unified Communications Manager, along with the Unified CM release where the phone model first became deprecated.</p>
 <table>
 <thead>
@@ -616,8 +621,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="relevant-data-attributes-tables" class="relative group">Relevant data, attributes, tables <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#relevant-data-attributes-tables" aria-label="Anchor">#</a></span></h2>
-<h3 id="tables" class="relative group">Tables <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#tables" aria-label="Anchor">#</a></span></h3>
+<h3 id="relevant-data-attributes-tables" class="relative group">Relevant data, attributes, tables <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#relevant-data-attributes-tables" aria-label="Anchor">#</a></span></h3>
+<h4 id="tables" class="relative group">Tables <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#tables" aria-label="Anchor">#</a></span></h4>
 <table>
 <thead>
 <tr>
@@ -636,7 +641,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="attributes" class="relative group">Attributes <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#attributes" aria-label="Anchor">#</a></span></h3>
+<h4 id="attributes" class="relative group">Attributes <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#attributes" aria-label="Anchor">#</a></span></h4>
 <table>
 <thead>
 <tr>
@@ -651,7 +656,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="conditions" class="relative group">Conditions <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#conditions" aria-label="Anchor">#</a></span></h3>
+<h4 id="conditions" class="relative group">Conditions <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#conditions" aria-label="Anchor">#</a></span></h4>
 <table>
 <thead>
 <tr>
@@ -666,7 +671,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="query" class="relative group">Query <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#query" aria-label="Anchor">#</a></span></h2>
+<h3 id="query" class="relative group">Query <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#query" aria-label="Anchor">#</a></span></h3>
 <p>Use the following query to get the count for each deprecated phone model.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> 
@@ -686,7 +691,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w">
-</span></span></span></code></pre></div><h2 id="return" class="relative group">Return <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#return" aria-label="Anchor">#</a></span></h2>
+</span></span></span></code></pre></div><h3 id="return" class="relative group">Return <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#return" aria-label="Anchor">#</a></span></h3>
 <p>The query will return a table with two columns, one containing the deprecated phone model and the other the count of how many there are in the environment.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">run sql SELECT COUNT<span class="o">(</span>*<span class="o">)</span>, typemodel.name as phonemodel FROM device INNER JOIN typemodel ON typemodel.enum<span class="o">=</span>device.tkmodel WHERE typemodel.name in <span class="o">(</span> <span class="s1">&#39;Cisco 7970&#39;</span>, <span class="s1">&#39;Cisco 7971&#39;</span>, <span class="s1">&#39;Cisco 7921&#39;</span>, <span class="s1">&#39;Cisco 12 SP+&#39;</span>, <span class="s1">&#39;Cisco 12 SP&#39;</span>, <span class="s1">&#39;Cisco 12 S&#39;</span>, <span class="s1">&#39;Cisco 30 VIP&#39;</span>, <span class="s1">&#39;Cisco 30 SP+&#39;</span>, <span class="s1">&#39;Cisco 7902&#39;</span>, <span class="s1">&#39;Cisco 7905&#39;</span>, <span class="s1">&#39;Cisco 7910&#39;</span>, <span class="s1">&#39;Cisco 7912&#39;</span>, <span class="s1">&#39;Cisco 7920&#39;</span> <span class="o">)</span> GROUP BY typemodel.name ORDER BY typemodel.name 
 </span></span><span class="line"><span class="cl">
@@ -695,7 +700,7 @@
 </span></span><span class="line"><span class="cl"><span class="m">7</span>          Cisco <span class="m">7921</span> 
 </span></span><span class="line"><span class="cl"><span class="m">1</span>          Cisco <span class="m">7970</span>
 </span></span><span class="line"><span class="cl">...
-</span></span></code></pre></div><h1 id="unsupported-phone-models" class="relative group">Unsupported Phone Models <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#unsupported-phone-models" aria-label="Anchor">#</a></span></h1>
+</span></span></code></pre></div><h2 id="unsupported-phone-models" class="relative group">Unsupported Phone Models <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#unsupported-phone-models" aria-label="Anchor">#</a></span></h2>
 <p>This query is much longer and lists all phone models/counts by excluding system devices, supported models and deprecated models.</p>
 <table>
 <thead>
@@ -727,7 +732,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="query-1" class="relative group">Query <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#query-1" aria-label="Anchor">#</a></span></h2>
+<h3 id="query-1" class="relative group">Query <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#query-1" aria-label="Anchor">#</a></span></h3>
 <p>Use the following query to get the count for each unsupported phone model.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> 
@@ -791,7 +796,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w">
-</span></span></span></code></pre></div><h2 id="return-1" class="relative group">Return <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#return-1" aria-label="Anchor">#</a></span></h2>
+</span></span></span></code></pre></div><h3 id="return-1" class="relative group">Return <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#return-1" aria-label="Anchor">#</a></span></h3>
 <p>The query will return a table with two columns, one containing the unsupported phone model and the other the count of how many there are in the environment.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">run sql SELECT COUNT<span class="o">(</span>*<span class="o">)</span>, typemodel.name AS phonemodel FROM device INNER JOIN typemodel ON typemodel.enum <span class="o">=</span> device.tkmodel WHERE typemodel.name NOT IN <span class="o">(</span><span class="s1">&#39;Cisco 3905&#39;</span>, <span class="s1">&#39;Cisco 6901&#39;</span>, <span class="s1">&#39;Cisco 7841&#39;</span>, <span class="s1">&#39;Cisco 7811&#39;</span>, <span class="s1">&#39;Cisco 7821&#39;</span>, <span class="s1">&#39;Cisco 7841&#39;</span>, <span class="s1">&#39;Cisco 7861&#39;</span>, <span class="s1">&#39;Cisco 7832&#39;</span>, <span class="s1">&#39;7915 12-Button Line Expansion Module&#39;</span>, <span class="s1">&#39;7915 24-Button Line Expansion Module&#39;</span>, <span class="s1">&#39;7916 12-Button Line Expansion Module&#39;</span>, <span class="s1">&#39;7916 24-Button Line Expansion Module&#39;</span>, <span class="s1">&#39;Cisco 7942&#39;</span>, <span class="s1">&#39;Cisco 7962&#39;</span>, <span class="s1">&#39;Cisco 7945&#39;</span>, <span class="s1">&#39;Cisco 7965&#39;</span>, <span class="s1">&#39;Cisco 8811&#39;</span>, <span class="s1">&#39;Cisco 8821&#39;</span>, <span class="s1">&#39;Cisco 8841&#39;</span>, <span class="s1">&#39;Cisco 8851&#39;</span>, <span class="s1">&#39;Cisco 8851NR&#39;</span>, <span class="s1">&#39;Cisco 8861&#39;</span>, <span class="s1">&#39;Cisco 8831&#39;</span>, <span class="s1">&#39;Cisco 8845&#39;</span>, <span class="s1">&#39;Cisco 8865&#39;</span>, <span class="s1">&#39;Cisco 8865NR&#39;</span>, <span class="s1">&#39;Cisco 8832&#39;</span>, <span class="s1">&#39;Cisco 8945&#39;</span>, <span class="s1">&#39;Cisco 8961&#39;</span>, <span class="s1">&#39;Cisco 9951&#39;</span>, <span class="s1">&#39;Cisco 9971&#39;</span>, <span class="s1">&#39;Cisco Dual Mode for Android&#39;</span>, <span class="s1">&#39;Cisco Dual Mode for iPhone&#39;</span>, <span class="s1">&#39;Cisco Jabber for Tablet&#39;</span>, <span class="s1">&#39;Cisco Jabber for Mac&#39;</span>, <span class="s1">&#39;Cisco Unified Client Services Framework&#39;</span>, <span class="s1">&#39;Cisco IP Communicator&#39;</span>, <span class="s1">&#39;Cisco ATA 190&#39;</span>, <span class="s1">&#39;Cisco ATA 191&#39;</span>, <span class="s1">&#39;Cisco DX650&#39;</span>, <span class="s1">&#39;Cisco DX70&#39;</span>, <span class="s1">&#39;Cisco DX80&#39;</span>, <span class="s1">&#39;Cisco TelePresence IX5000&#39;</span>, <span class="s1">&#39;Cisco TelePresence EX60&#39;</span>, <span class="s1">&#39;Cisco TelePresence EX90&#39;</span>, <span class="s1">&#39;Cisco TelePresence MX200 G2&#39;</span>, <span class="s1">&#39;Cisco TelePresence MX300 G2&#39;</span>, <span class="s1">&#39;Cisco TelePresence MX700&#39;</span>, <span class="s1">&#39;Cisco TelePresence MX800&#39;</span>, <span class="s1">&#39;Cisco TelePresence MX800 Dual&#39;</span>, <span class="s1">&#39;Cisco TelePresence SX10&#39;</span>, <span class="s1">&#39;Cisco TelePresence SX20&#39;</span>, <span class="s1">&#39;Cisco TelePresence SX80&#39;</span>, <span class="s1">&#39;Cisco Webex DX80&#39;</span><span class="o">)</span> AND typemodel.name NOT IN <span class="o">(</span><span class="s1">&#39;Analog Phone&#39;</span>, <span class="s1">&#39;Cisco VGC Phone&#39;</span>, <span class="s1">&#39;Cisco IOS Conference Bridge (HDV2)&#39;</span>, <span class="s1">&#39;MGCP Trunk&#39;</span>, <span class="s1">&#39;CTI Port&#39;</span>, <span class="s1">&#39;Conference Bridge&#39;</span>, <span class="s1">&#39;Media Termination Point&#39;</span>, <span class="s1">&#39;Interactive Voice Response&#39;</span>, <span class="s1">&#39;Cisco IOS Media Termination Point (HDV2)&#39;</span>, <span class="s1">&#39;Third-party SIP Device (Advanced)&#39;</span>, <span class="s1">&#39;Third-party SIP Device (Basic)&#39;</span>, <span class="s1">&#39;Tone Announcement Player&#39;</span>, <span class="s1">&#39;SIP Trunk&#39;</span>, <span class="s1">&#39;Universal Device Template&#39;</span>, <span class="s1">&#39;Voice Mail Port&#39;</span>, <span class="s1">&#39;MGCP Station&#39;</span>, <span class="s1">&#39;Music On Hold&#39;</span>, <span class="s1">&#39;CTI Route Point&#39;</span>, <span class="s1">&#39;Remote Destination Profile&#39;</span>, <span class="s1">&#39;Cisco IOS Software Media Termination Point (HDV2)&#39;</span>, <span class="s1">&#39;SCCP gateway virtual phone&#39;</span>, <span class="s1">&#39;Route List&#39;</span>, <span class="s1">&#39;Cisco TelePresence Conductor&#39;</span>, <span class="s1">&#39;Gatekeeper&#39;</span><span class="o">)</span> AND typemodel.name NOT IN <span class="o">(</span><span class="s1">&#39;Cisco 7970&#39;</span>, <span class="s1">&#39;Cisco 7971&#39;</span>, <span class="s1">&#39;Cisco 7921&#39;</span>, <span class="s1">&#39;Cisco 12 SP+&#39;</span>, <span class="s1">&#39;Cisco 12 SP&#39;</span>, <span class="s1">&#39;Cisco 12 S&#39;</span>, <span class="s1">&#39;Cisco 30 VIP&#39;</span>, <span class="s1">&#39;Cisco 30 SP+&#39;</span>, <span class="s1">&#39;Cisco 7902&#39;</span>, <span class="s1">&#39;Cisco 7905&#39;</span>, <span class="s1">&#39;Cisco 7910&#39;</span>, <span class="s1">&#39;Cisco 7912&#39;</span>, <span class="s1">&#39;Cisco 7920&#39;</span><span class="o">)</span> GROUP BY typemodel.name ORDER BY typemodel.name
 </span></span><span class="line"><span class="cl">
