@@ -108,7 +108,7 @@
     "keywords": ["cucm","sql"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1170"
+    "wordCount": "1211"
   }]
   </script>
 
@@ -483,7 +483,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2022-10-15 20:29:05 &#43;0200 CEST">15 October 2022</time><span class="px-2 text-primary-500">&middot;</span><span>1170 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
+  <time datetime="2022-10-15 20:29:05 &#43;0200 CEST">15 October 2022</time><span class="px-2 text-primary-500">&middot;</span><span>1211 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
   
 
   
@@ -586,6 +586,13 @@
     </li>
     <li><a href="#unsupported-phone-models">Unsupported Phone Models</a>
       <ul>
+        <li><a href="#relevant-data-attributes-tables-1">Relevant data, attributes, tables</a>
+          <ul>
+            <li><a href="#tables-1">Tables</a></li>
+            <li><a href="#attributes-1">Attributes</a></li>
+            <li><a href="#conditions-1">Conditions</a></li>
+          </ul>
+        </li>
         <li><a href="#query-1">Query</a></li>
         <li><a href="#return-1">Return</a></li>
       </ul>
@@ -673,23 +680,23 @@
 </table>
 <h3 id="query" class="relative group">Query <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#query" aria-label="Anchor">#</a></span></h3>
 <p>Use the following query to get the count for each deprecated phone model.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">phonemodel</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">phonemodel</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">device</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="k">inner</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">typemodel</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">typemodel</span><span class="p">.</span><span class="n">enum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">device</span><span class="p">.</span><span class="n">tkmodel</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">typemodel</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">typemodel</span><span class="p">.</span><span class="n">enum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">device</span><span class="p">.</span><span class="n">tkmodel</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="k">IN</span><span class="w"> </span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s1">&#39;Cisco 7970&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cisco 7971&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cisco 7921&#39;</span><span class="p">,</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s1">&#39;Cisco 12 SP+&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cisco 12 SP&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cisco 12 S&#39;</span><span class="p">,</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s1">&#39;Cisco 30 VIP&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cisco 30 SP+&#39;</span><span class="p">,</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s1">&#39;Cisco 7902&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cisco 7905&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cisco 7910&#39;</span><span class="p">,</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s1">&#39;Cisco 7912&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Cisco 7920&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">)</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> 
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">typemodel</span><span class="p">.</span><span class="n">name</span><span class="w">
 </span></span></span></code></pre></div><h3 id="return" class="relative group">Return <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#return" aria-label="Anchor">#</a></span></h3>
 <p>The query will return a table with two columns, one containing the deprecated phone model and the other the count of how many there are in the environment.</p>
@@ -701,7 +708,7 @@
 </span></span><span class="line"><span class="cl"><span class="m">1</span>          Cisco <span class="m">7970</span>
 </span></span><span class="line"><span class="cl">...
 </span></span></code></pre></div><h2 id="unsupported-phone-models" class="relative group">Unsupported Phone Models <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#unsupported-phone-models" aria-label="Anchor">#</a></span></h2>
-<p>This query is much longer and lists all phone models/counts by excluding system devices, supported models and deprecated models.</p>
+<p>This query is much longer and lists all phone models/counts by excluding system devices, all supported models and deprecated models.</p>
 <table>
 <thead>
 <tr>
@@ -729,6 +736,56 @@
 </tr>
 <tr>
 <td>Cisco TelePresence 500-32, 500-37, 1000 MXP, 1100, 1300-65, 1300-47, 3000 Series</td>
+</tr>
+</tbody>
+</table>
+<h3 id="relevant-data-attributes-tables-1" class="relative group">Relevant data, attributes, tables <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#relevant-data-attributes-tables-1" aria-label="Anchor">#</a></span></h3>
+<h4 id="tables-1" class="relative group">Tables <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#tables-1" aria-label="Anchor">#</a></span></h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>device</code></td>
+<td>contains information about the phones</td>
+</tr>
+<tr>
+<td><code>typemodel</code></td>
+<td>translates the typemodel integers (enums) to the human-readable phone model names</td>
+</tr>
+</tbody>
+</table>
+<h4 id="attributes-1" class="relative group">Attributes <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#attributes-1" aria-label="Anchor">#</a></span></h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>typemode.name</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="conditions-1" class="relative group">Conditions <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#conditions-1" aria-label="Anchor">#</a></span></h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>typemodel.name NOT IN ( list of supported or deprecated phones)</code></td>
+<td></td>
 </tr>
 </tbody>
 </table>
