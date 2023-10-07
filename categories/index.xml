@@ -6,23 +6,16 @@
     <description>Recent content in Categories on Awetomate</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <copyright>© 2023 Awetomate</copyright>
     <lastBuildDate>Sun, 16 Oct 2022 17:41:46 +0200</lastBuildDate><atom:link href="https://awetomate.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>cucm</title>
-      <link>https://awetomate.github.io/categories/cucm/</link>
+      <title>Unified Communications</title>
+      <link>https://awetomate.github.io/categories/unified-communications/</link>
       <pubDate>Sun, 16 Oct 2022 17:41:46 +0200</pubDate>
       
-      <guid>https://awetomate.github.io/categories/cucm/</guid>
+      <guid>https://awetomate.github.io/categories/unified-communications/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>sql</title>
-      <link>https://awetomate.github.io/categories/sql/</link>
-      <pubDate>Sun, 16 Oct 2022 17:41:46 +0200</pubDate>
       
-      <guid>https://awetomate.github.io/categories/sql/</guid>
-      <description></description>
     </item>
     
   </channel>
