@@ -12,21 +12,7 @@
     
   
     
-      <url>
-            <loc>https://awetomate.github.io/categories/</loc>
-            <lastmod>2022-10-16T17:41:46+02:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
   
-    
-      <url>
-            <loc>https://awetomate.github.io/tags/cucm/</loc>
-            <lastmod>2022-10-16T17:41:46+02:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
     
   
     
@@ -48,30 +34,9 @@
     
   
     
-      <url>
-            <loc>https://awetomate.github.io/tags/sql/</loc>
-            <lastmod>2022-10-16T17:41:46+02:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
   
     
-      <url>
-            <loc>https://awetomate.github.io/tags/</loc>
-            <lastmod>2022-10-16T17:41:46+02:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
   
-    
-      <url>
-            <loc>https://awetomate.github.io/categories/unified-communications/</loc>
-            <lastmod>2022-10-16T17:41:46+02:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
     
   
     
@@ -99,6 +64,26 @@
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
+    
+  
+    
+      <url>
+            <loc>https://awetomate.github.io/archives/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://awetomate.github.io/search/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
     
   
 </urlset>
