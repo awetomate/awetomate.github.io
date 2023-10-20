@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>api on Awetomate</title>
+    <link>https://awetomate.github.io/tags/api/</link>
+    <description>Recent content in api on Awetomate</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2023 Awetomate</copyright>
+    <lastBuildDate>Fri, 20 Oct 2023 14:42:49 +0200</lastBuildDate><atom:link href="https://awetomate.github.io/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Itential getAdaptersHealth API Call</title>
+      <link>https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/</link>
+      <pubDate>Fri, 20 Oct 2023 14:42:49 +0200</pubDate>
+      
+      <guid>https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/</guid>
+      <description>The getAdaptersHealth API endpoint allows us to retrieve the data and operational status for all configured adapters on an IAP instance. I typically use this to e.g. determine the proper IAG adapter to onboard a device with or to determine if an adapter is healthy (Status:RUNNING, Connection:ONLINE) as part of my pre-change checks.</description>
+      
+    </item>
+    
+  </channel>
+</rss>
