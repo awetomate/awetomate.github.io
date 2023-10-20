@@ -19,6 +19,26 @@
     </item>
     
     <item>
+      <title>Itential getDevicesFiltered API Call</title>
+      <link>https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/</link>
+      <pubDate>Fri, 20 Oct 2023 14:42:49 +0200</pubDate>
+      
+      <guid>https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/</guid>
+      <description>The getDevicesFiltered task allows us to retrieve the inventory data for one or more configured devices in Configuration Manager. I typically use this to e.g. retrieve a list of devices of a certain OS type.</description>
+      
+    </item>
+    
+    <item>
+      <title>Itential getJobs API Call</title>
+      <link>https://awetomate.github.io/2023/10/itential-getjobs-api-call/</link>
+      <pubDate>Fri, 20 Oct 2023 14:42:49 +0200</pubDate>
+      
+      <guid>https://awetomate.github.io/2023/10/itential-getjobs-api-call/</guid>
+      <description>The getJobs API endpoint/canvas task allows us to retrieve detailed job data for one or multiple jobs. It returns a staggering amount of data, and I strongly advise to use the filter options to limit both the number of results and the returned fields.</description>
+      
+    </item>
+    
+    <item>
       <title>Home Cluster Check via Sql</title>
       <link>https://awetomate.github.io/2022/10/home-cluster-check-via-sql/</link>
       <pubDate>Sun, 16 Oct 2022 17:41:46 +0200</pubDate>

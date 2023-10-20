@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Itential getAdaptersHealth API Call &middot; Awetomate</title>
-  <meta name="title" content="Itential getAdaptersHealth API Call &middot; Awetomate" />
+  <title>Itential getDevicesFiltered API Call &middot; Awetomate</title>
+  <meta name="title" content="Itential getDevicesFiltered API Call &middot; Awetomate" />
   
   <meta name="description" content="Random thoughts and notes of a network automation engineer" />
   <meta name="keywords" content="itential, api, low-code, " />
   
   
-  <link rel="canonical" href="https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/" />
+  <link rel="canonical" href="https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/" />
   
   
   
@@ -63,16 +63,16 @@
   
   
   
-  <meta property="og:title" content="Itential getAdaptersHealth API Call" />
-<meta property="og:description" content="The getAdaptersHealth API endpoint allows us to retrieve the data and operational status for all configured adapters on an IAP instance. I typically use this to e.g. determine the proper IAG adapter to onboard a device with or to determine if an adapter is healthy (Status:RUNNING, Connection:ONLINE) as part of my pre-change checks." />
+  <meta property="og:title" content="Itential getDevicesFiltered API Call" />
+<meta property="og:description" content="The getDevicesFiltered task allows us to retrieve the inventory data for one or more configured devices in Configuration Manager. I typically use this to e.g. retrieve a list of devices of a certain OS type." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-10-20T14:42:49+02:00" />
 <meta property="article:modified_time" content="2023-10-20T14:42:49+02:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Itential getAdaptersHealth API Call"/>
-<meta name="twitter:description" content="The getAdaptersHealth API endpoint allows us to retrieve the data and operational status for all configured adapters on an IAP instance. I typically use this to e.g. determine the proper IAG adapter to onboard a device with or to determine if an adapter is healthy (Status:RUNNING, Connection:ONLINE) as part of my pre-change checks."/>
+<meta name="twitter:title" content="Itential getDevicesFiltered API Call"/>
+<meta name="twitter:description" content="The getDevicesFiltered task allows us to retrieve the inventory data for one or more configured devices in Configuration Manager. I typically use this to e.g. retrieve a list of devices of a certain OS type."/>
 
   
   <script type="application/ld+json">
@@ -80,12 +80,12 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Itential getAdaptersHealth API Call",
-    "headline": "Itential getAdaptersHealth API Call",
+    "name": "Itential getDevicesFiltered API Call",
+    "headline": "Itential getDevicesFiltered API Call",
     
-    "abstract": "The getAdaptersHealth API endpoint allows us to retrieve the data and operational status for all configured adapters on an IAP instance. I typically use this to e.g. determine the proper IAG adapter to onboard a device with or to determine if an adapter is healthy (Status:RUNNING, Connection:ONLINE) as part of my pre-change checks.",
+    "abstract": "The getDevicesFiltered task allows us to retrieve the inventory data for one or more configured devices in Configuration Manager. I typically use this to e.g. retrieve a list of devices of a certain OS type.",
     "inLanguage": "en",
-    "url" : "https:\/\/awetomate.github.io\/2023\/10\/itential-getadaptershealth-api-call\/",
+    "url" : "https:\/\/awetomate.github.io\/2023\/10\/itential-getdevicesfiltered-api-call\/",
     "author" : {
       "@type": "Person",
       "name": "Awetomate"
@@ -99,7 +99,7 @@
     "keywords": ["itential","api","low-code"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "512"
+    "wordCount": "415"
   }]
   </script>
 
@@ -434,7 +434,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Itential getAdaptersHealth API Call
+      Itential getDevicesFiltered API Call
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -477,7 +477,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-10-20 14:42:49 &#43;0200 CEST">20 October 2023</time><span class="px-2 text-primary-500">&middot;</span><span>512 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  <time datetime="2023-10-20 14:42:49 &#43;0200 CEST">20 October 2023</time><span class="px-2 text-primary-500">&middot;</span><span>415 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
   
 
   
@@ -523,13 +523,12 @@
     class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-generic-restcall-task">The generic restCall task</a>
+    <li><a href="#the-getdevicesfiltered-task">The getDevicesFiltered task</a>
       <ul>
         <li><a href="#example">Example</a></li>
       </ul>
     </li>
-    <li><a href="#queryoptions">queryOptions</a></li>
-    <li><a href="#example-workflow">Example Workflow</a></li>
+    <li><a href="#options">options</a></li>
     <li><a href="#example-inputoutput">Example Input/Output</a></li>
   </ul>
 </nav>
@@ -544,13 +543,12 @@
     class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-generic-restcall-task">The generic restCall task</a>
+    <li><a href="#the-getdevicesfiltered-task">The getDevicesFiltered task</a>
       <ul>
         <li><a href="#example">Example</a></li>
       </ul>
     </li>
-    <li><a href="#queryoptions">queryOptions</a></li>
-    <li><a href="#example-workflow">Example Workflow</a></li>
+    <li><a href="#options">options</a></li>
     <li><a href="#example-inputoutput">Example Input/Output</a></li>
   </ul>
 </nav>
@@ -606,20 +604,20 @@
 
 
         <div class="max-w-prose mb-20">
-          <p>The getAdaptersHealth API endpoint allows us to retrieve the data and operational status for all configured adapters on an IAP instance.
-I typically use this to e.g. determine the proper IAG adapter to onboard a device with or to determine if an adapter is healthy (Status:RUNNING, Connection:ONLINE) as part of my pre-change checks.</p>
-<div id="the-generic-restcall-task" class="anchor"></div>
-<h2 class="relative group">The generic restCall task 
+          <p>The getDevicesFiltered task allows us to retrieve the inventory data for one or more configured devices in Configuration Manager.
+I typically use this to e.g. retrieve a list of devices of a certain OS type.<br>
+The <a href="https://apidocs.itential.com/2023.1/api/app-configuration_manager/getDevicesFiltered/"   target="_blank">
+    official API documentation</a> for this endpoint was not really clear to me and it took some testing and playing with different query parameters to figure out how to properly use this task.</p>
+<div id="the-getdevicesfiltered-task" class="anchor"></div>
+<h2 class="relative group">The getDevicesFiltered task 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#the-generic-restcall-task" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#the-getdevicesfiltered-task" aria-label="Anchor">#</a></span>        
     
 </h2>
-<p>You can use the generic <strong>restCall</strong> task in IAP Automation Builder to send API calls to the local or a remote IAP server.
-This task enables you to send a query to the getAdaptersHealth API endpoint, which is part of the standard pronghorn-core group of API calls.
-There is currently no dedicated task available in Automation Builder to get all adapters and their operational status (IAP 2023.1). And the Itential <a href="https://gitlab.com/itentialopensource/adapters/adapter-iap"   target="_blank">
-    IAP opensource adapter</a> doesn&rsquo;t contain this option either.</p>
+<p>You can use the <strong>getDevicesFiltered</strong> task, which is part of the <strong>ConfigurationManager</strong> tasks group in IAP Automation Builder, to retrieve data for one or multiple devices. The critical piece is to set the proper query parameters using the <a href="#options"  >
+    <strong>options</strong></a> object to filter and limit the results. This is especially important for large environments with thousands of devices.</p>
 <div id="example" class="anchor"></div>
 <h3 class="relative group">Example 
     <span
@@ -628,7 +626,7 @@ There is currently no dedicated task available in Automation Builder to get all 
             style="text-decoration-line: none !important;" href="#example" aria-label="Anchor">#</a></span>        
     
 </h3>
-<p>The following screenshot shows an example of how to use the restCall task to send an API call to the local IAP instance (127.0.0.1).
+<p>The following screenshot shows an example of how to use the getDevicesFiltered task.
 
 
 
@@ -643,7 +641,7 @@ There is currently no dedicated task available in Automation Builder to get all 
       
       <img
         class="my-0 rounded-md"
-        src="/2023/10/itential-getadaptershealth-api-call/restCall.png"
+        src="/2023/10/itential-getdevicesfiltered-api-call/getDevicesFiltered.png"
         alt="Image alt"
       />
       
@@ -661,122 +659,104 @@ There is currently no dedicated task available in Automation Builder to get all 
 </thead>
 <tbody>
 <tr>
-<td>uri</td>
-<td>https://127.0.0.1:3443/health/adapters</td>
-</tr>
-<tr>
-<td>verb</td>
-<td>GET</td>
-</tr>
-<tr>
-<td>user</td>
-<td><em>username</em></td>
-</tr>
-<tr>
-<td>password</td>
-<td><em>password</em></td>
-</tr>
-<tr>
-<td>headers</td>
-<td><em>leave blank</em></td>
-</tr>
-<tr>
-<td>body</td>
-<td><em>see <a href="#queryoptions"  >
-    queryOptions</a> section below</em></td>
+<td>options</td>
+<td>Object with filters and query params.</td>
 </tr>
 </tbody>
 </table>
-<div id="queryoptions" class="anchor"></div>
-<h2 class="relative group">queryOptions 
+<div id="options" class="anchor"></div>
+<h2 class="relative group">options 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#queryoptions" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#options" aria-label="Anchor">#</a></span>        
     
 </h2>
-<p>The queryOptions determine what and how much data is returned by the getAdaptersHealth API call.</p>
-<p>In this example I want to retrieve all Cisco DNA Center adapter instances on my IAP. The field I want to filter by is <strong>package_id</strong> and package ID for the DNAC adapters is <strong>@itentialopensource/adapter-dna_center</strong>.<br>
-The package ID is usually the name of the adapter prebuilt as shown in the <a href="https://www.npmjs.com/package/@itentialopensource/adapter-dna_center"   target="_blank">
-    NPM</a> or <a href="https://gitlab.com/itentialopensource/adapters/controller-orchestrator/adapter-dna_center"   target="_blank">
-    GitLab</a> repositories. Alternatively, you can also get this value by going to Admin Essentials &gt; Adapters &gt; <em>yourAdapter</em>, toggle on the Advanced View, and copy the <strong>model</strong> value that starts with <em>@itential/</em> or <em>@itentialopensource/</em>.</p>
-<p>Here is an example queryOptions template you can use to send as the body in the restCall task:</p>
+<p>The options object determines what and how much data is returned by the getDevicesFiltered API call.</p>
+<p>In this example I want to retrieve the first ten devices from Configuration Manager that have an <strong>OS Type</strong> value of <strong>cisco-asa</strong>.</p>
+<p>Here is an example template you can use to send as the options object in the getDevicesFiltered task:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;queryOptions&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;equals&#34;</span><span class="p">:</span> <span class="s2">&#34;@itentialopensource/adapter-dna_center&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;equalsField&#34;</span><span class="p">:</span> <span class="s2">&#34;package_id&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;skip&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;limit&#34;</span><span class="p">:</span> <span class="mi">10</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;start&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;filter&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ostype&#34;</span><span class="p">:</span> <span class="s2">&#34;cisco-asa&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;exactMatch&#34;</span><span class="p">:</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><table>
 <thead>
 <tr>
 <th></th>
 <th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>equals</td>
-<td>Filter on a field. The value has to match exactly.</td>
-</tr>
-<tr>
-<td>equalsField</td>
-<td>The field to match against.</td>
-</tr>
-<tr>
-<td>skip</td>
-<td>Number of results to skip. Used for pagination. Default is 0.</td>
-</tr>
-<tr>
 <td>limit</td>
 <td>The number of results returned.</td>
+<td>required</td>
+</tr>
+<tr>
+<td>start</td>
+<td>Number of results to skip. Used for pagination.</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>filter</td>
+<td>Filter on a field. The object can take multiple keys.</td>
+<td>optional</td>
 </tr>
 <tr>
 <td>sort</td>
-<td>Field to sort by. Default is name.</td>
+<td>Field(s) to sort by.</td>
+<td>optional</td>
 </tr>
 <tr>
 <td>order</td>
-<td>Sort direction. 1 for ascending and -1 for descending.</td>
+<td>Sort direction; <em>ascending</em> or <em>descending</em>.</td>
+<td>optional</td>
+</tr>
+<tr>
+<td>exactMatch</td>
+<td>Boolean that indicates if an exact result will be returned or not.</td>
+<td>seems to be required despite the documentation not listing it as such</td>
 </tr>
 </tbody>
 </table>
-<p>Check out the <a href="https://apidocs.itential.com/api/pronghorn-core/getAdaptersHealth"   target="_blank">
-    schema definition</a> for more options like <em>contains</em> or <em>startsWith</em>.</p>
-<p>Use filter options like equals/equalsField, contains/containsField, or startsWith/startsWithField to retrieve only the adapter data you are looking for.</p>
-<div id="example-workflow" class="anchor"></div>
-<h2 class="relative group">Example Workflow 
-    <span
-        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
-        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#example-workflow" aria-label="Anchor">#</a></span>        
+<p>Check out the <a href="https://apidocs.itential.com/2023.1/api/app-configuration_manager/getDevicesFiltered"   target="_blank">
+    schema definition</a> for more filter and query options.</p>
+
+  
+
+
+
+<div
+  
+    class="flex px-4 py-3 rounded-md bg-primary-100 dark:bg-primary-900"
+  >
+
+  <span
     
-</h2>
-<p>
+      class="text-primary-400 ltr:pr-3 rtl:pl-3 flex items-center"
+    >
 
-
-
-
-  
-  
     
-  
-  
-    <figure>
-      
-      <img
-        class="my-0 rounded-md"
-        src="/2023/10/itential-getadaptershealth-api-call/exampleWorkflow.png"
-        alt="Image alt"
-      />
-      
-      
-    </figure>
-  
 
-</p>
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z"/></svg>
+
+  </span>
+
+
+  </span>
+
+  <span
+    
+      class="dark:text-neutral-300"
+    ><strong>exactMatch</strong> seems to be a required parameter in IAP 2023.1 and earlier. Add this parameter to your options object if you receive server 500 errors when executing the getDevicesFiltered task.</span>
+</div>
+
 <div id="example-inputoutput" class="anchor"></div>
 <h2 class="relative group">Example Input/Output 
     <span
@@ -787,59 +767,56 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
 </h2>
 <p><strong>Input</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;uri&#34;</span><span class="p">:</span> <span class="s2">&#34;https://127.0.0.1:3443/health/adapters&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;verb&#34;</span><span class="p">:</span> <span class="s2">&#34;GET&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;user&#34;</span><span class="p">:</span> <span class="s2">&#34;* * * * *&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;password&#34;</span><span class="p">:</span> <span class="s2">&#34;* * * * *&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;headers&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;queryOptions&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;equals&#34;</span><span class="p">:</span> <span class="s2">&#34;@itentialopensource/adapter-dna_center&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;equalsField&#34;</span><span class="p">:</span> <span class="s2">&#34;package_id&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;skip&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;limit&#34;</span><span class="p">:</span> <span class="mi">10</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="p">},</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;responseHeaders&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;options&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;limit&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;start&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;filter&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;ostype&#34;</span><span class="p">:</span> <span class="s2">&#34;cisco-asa&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;exactMatch&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><p><strong>Output</strong> <em>(truncated)</em></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;response&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;body&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;results&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;dnac-lab.domain.com&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;package_id&#34;</span><span class="p">:</span> <span class="s2">&#34;@itentialopensource/adapter-dna_center&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;0.6.2&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;type&#34;</span><span class="p">:</span> <span class="s2">&#34;Adapter&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;This adapter integrates with system Dna_center&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;state&#34;</span><span class="p">:</span> <span class="s2">&#34;RUNNING&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;connection&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;state&#34;</span><span class="p">:</span> <span class="s2">&#34;ONLINE&#34;</span>
-</span></span><span class="line"><span class="cl">          <span class="p">},</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;uptime&#34;</span><span class="p">:</span> <span class="mf">491162.191712545</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;memoryUsage&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;rss&#34;</span><span class="p">:</span> <span class="mi">256696320</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;heapTotal&#34;</span><span class="p">:</span> <span class="mi">109891584</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;heapUsed&#34;</span><span class="p">:</span> <span class="mi">103882776</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;external&#34;</span><span class="p">:</span> <span class="mi">38782589</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;arrayBuffers&#34;</span><span class="p">:</span> <span class="mi">37866102</span>
-</span></span><span class="line"><span class="cl">          <span class="p">},</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;cpuUsage&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;user&#34;</span><span class="p">:</span> <span class="mi">352368455</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;system&#34;</span><span class="p">:</span> <span class="mi">67758551</span>
-</span></span><span class="line"><span class="cl">          <span class="p">},</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;pid&#34;</span><span class="p">:</span> <span class="mi">2323470</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;logger&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;console&#34;</span><span class="p">:</span> <span class="s2">&#34;debug&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;file&#34;</span><span class="p">:</span> <span class="s2">&#34;debug&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;syslog&#34;</span><span class="p">:</span> <span class="p">{}</span>
-</span></span><span class="line"><span class="cl">          <span class="p">},</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;routePrefix&#34;</span><span class="p">:</span> <span class="s2">&#34;Dna_center&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">          <span class="nt">&#34;prevUptime&#34;</span><span class="p">:</span> <span class="mf">491134.916105273</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">      <span class="p">],</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">&#34;total&#34;</span><span class="p">:</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;devices&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;entity&#34;</span><span class="p">:</span> <span class="s2">&#34;device&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;total&#34;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;totalByAdapter&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;itential-iag1-dev.domain.com&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;itential-iag2-dev.domain.com&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&#34;itential-iag3-dev.domain.com&#34;</span><span class="p">:</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;unique_device_count&#34;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;return_count&#34;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;start_index&#34;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;list&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">      <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;user&#34;</span><span class="p">:</span> <span class="s2">&#34;username&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;port&#34;</span><span class="p">:</span> <span class="s2">&#34;22&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;password&#34;</span><span class="p">:</span> <span class="s2">&#34;************&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ostype&#34;</span><span class="p">:</span> <span class="s2">&#34;cisco-asa&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;ipaddress&#34;</span><span class="p">:</span> <span class="s2">&#34;10.11.12.13&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;device-type&#34;</span><span class="p">:</span> <span class="s2">&#34;network_cli&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;testdevice1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;host&#34;</span><span class="p">:</span> <span class="s2">&#34;itential-iag1-dev.domain.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;actions&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;deleteDevice&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;getConfig&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;getDevice&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;getDevicesFiltered&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;getOperationalData&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;isAlive&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;loadConfig&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;restoreConfig&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;runCommand&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;setConfig&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;origins&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;itential-iag1-dev.domain.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">          <span class="s2">&#34;itential-iag2-dev.domain.com&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div>
@@ -855,7 +832,7 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/&amp;title=Itential%20getAdaptersHealth%20API%20Call"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/&amp;title=Itential%20getDevicesFiltered%20API%20Call"
       title="Share on LinkedIn"
       aria-label="Share on LinkedIn"
       >
@@ -874,7 +851,7 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://twitter.com/intent/tweet/?url=https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/&amp;text=Itential%20getAdaptersHealth%20API%20Call"
+      href="https://twitter.com/intent/tweet/?url=https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/&amp;text=Itential%20getDevicesFiltered%20API%20Call"
       title="Tweet on Twitter"
       aria-label="Tweet on Twitter"
       >
@@ -893,7 +870,7 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://reddit.com/submit/?url=https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/&amp;resubmit=true&amp;title=Itential%20getAdaptersHealth%20API%20Call"
+      href="https://reddit.com/submit/?url=https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/&amp;resubmit=true&amp;title=Itential%20getDevicesFiltered%20API%20Call"
       title="Submit to Reddit"
       aria-label="Submit to Reddit"
       >
@@ -912,7 +889,7 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://www.facebook.com/sharer/sharer.php?u=https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/&amp;quote=Itential%20getAdaptersHealth%20API%20Call"
+      href="https://www.facebook.com/sharer/sharer.php?u=https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/&amp;quote=Itential%20getDevicesFiltered%20API%20Call"
       title="Share on Facebook"
       aria-label="Share on Facebook"
       >
@@ -931,7 +908,7 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="mailto:?body=https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/&amp;subject=Itential%20getAdaptersHealth%20API%20Call"
+      href="mailto:?body=https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/&amp;subject=Itential%20getDevicesFiltered%20API%20Call"
       title="Send via email"
       aria-label="Send via email"
       >
@@ -950,7 +927,7 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://api.whatsapp.com/send?text=https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/&amp;resubmit=true&amp;title=Itential%20getAdaptersHealth%20API%20Call"
+      href="https://api.whatsapp.com/send?text=https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/&amp;resubmit=true&amp;title=Itential%20getDevicesFiltered%20API%20Call"
       title=""
       aria-label=""
       >
@@ -969,7 +946,7 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
       <a
       target="_blank"
       class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-      href="https://t.me/share/url?url=https://awetomate.github.io/2023/10/itential-getadaptershealth-api-call/&amp;resubmit=true&amp;title=Itential%20getAdaptersHealth%20API%20Call"
+      href="https://t.me/share/url?url=https://awetomate.github.io/2023/10/itential-getdevicesfiltered-api-call/&amp;resubmit=true&amp;title=Itential%20getDevicesFiltered%20API%20Call"
       title=""
       aria-label=""
       >
@@ -991,8 +968,8 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
       </div>
      
      <script>
-        var oid = "views_posts\/itential-getAdaptersHealth-API-call\/index.md"
-        var oid_likes = "likes_posts\/itential-getAdaptersHealth-API-call\/index.md"
+        var oid = "views_posts\/itential-getDevicesFiltered-API-call\/index.md"
+        var oid_likes = "likes_posts\/itential-getDevicesFiltered-API-call\/index.md"
       </script>
       
       
@@ -1011,7 +988,7 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/2023/10/itential-getdevicesfiltered-api-call/">
+            <a class="flex group mr-3" href="/2023/10/itential-getjobs-api-call/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -1023,7 +1000,7 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Itential getDevicesFiltered API Call</span
+                  >Itential getJobs API Call</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
@@ -1035,6 +1012,28 @@ The package ID is usually the name of the adapter prebuilt as shown in the <a hr
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/2023/10/itential-getadaptershealth-api-call/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Itential getAdaptersHealth API Call</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-10-20 14:42:49 &#43;0200 CEST">20 October 2023</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
