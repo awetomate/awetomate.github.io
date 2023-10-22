@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Awetomate</title>
-    <link>https://awetomate.github.io/tags/</link>
+    <link>https://awetomate.net/tags/</link>
     <description>Recent content in Tags on Awetomate</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2023 Awetomate</copyright>
-    <lastBuildDate>Fri, 20 Oct 2023 14:42:49 +0200</lastBuildDate><atom:link href="https://awetomate.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Oct 2023 14:42:49 +0200</lastBuildDate><atom:link href="https://awetomate.net/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>api</title>
-      <link>https://awetomate.github.io/tags/api/</link>
+      <link>https://awetomate.net/tags/api/</link>
       <pubDate>Fri, 20 Oct 2023 14:42:49 +0200</pubDate>
       
-      <guid>https://awetomate.github.io/tags/api/</guid>
+      <guid>https://awetomate.net/tags/api/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>itential</title>
-      <link>https://awetomate.github.io/tags/itential/</link>
+      <link>https://awetomate.net/tags/itential/</link>
       <pubDate>Fri, 20 Oct 2023 14:42:49 +0200</pubDate>
       
-      <guid>https://awetomate.github.io/tags/itential/</guid>
+      <guid>https://awetomate.net/tags/itential/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>low-code</title>
-      <link>https://awetomate.github.io/tags/low-code/</link>
+      <link>https://awetomate.net/tags/low-code/</link>
       <pubDate>Fri, 20 Oct 2023 14:42:49 +0200</pubDate>
       
-      <guid>https://awetomate.github.io/tags/low-code/</guid>
+      <guid>https://awetomate.net/tags/low-code/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>cucm</title>
-      <link>https://awetomate.github.io/tags/cucm/</link>
+      <link>https://awetomate.net/tags/cucm/</link>
       <pubDate>Sun, 16 Oct 2022 17:41:46 +0200</pubDate>
       
-      <guid>https://awetomate.github.io/tags/cucm/</guid>
+      <guid>https://awetomate.net/tags/cucm/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>sql</title>
-      <link>https://awetomate.github.io/tags/sql/</link>
+      <link>https://awetomate.net/tags/sql/</link>
       <pubDate>Sun, 16 Oct 2022 17:41:46 +0200</pubDate>
       
-      <guid>https://awetomate.github.io/tags/sql/</guid>
+      <guid>https://awetomate.net/tags/sql/</guid>
       <description></description>
       
     </item>
